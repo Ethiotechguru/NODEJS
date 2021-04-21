@@ -1,0 +1,20 @@
+.detail{
+    box-sizing: border-box;
+    width: 30%;
+    background-color: rgb(55, 235, 139);
+    padding: 3px 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.paragraph{
+    width: 50%;
+    margin-left: 0;
+}
+hr{
+    margin: 8px 10px 8px 10px;
+}

@@ -1,0 +1,36 @@
+.form-control{
+    width: 100%;
+    margin: 1rem auto;
+}
+.form-control label,
+.form-control input,
+.form-control textarea{
+    display: block;
+    width: 20rem;
+    margin: auto;
+}
+.product-form{
+    width: 30rem;
+    margin: 0 auto;
+}
+button{
+    margin: 1rem 0;
+    font-size: inherit;
+    border:2px solid black;
+    padding:5px 10px;
+    border-radius: 4px;
+}
+.card{
+    box-sizing: border-box;
+    width:100%;
+    background-color: rgb(171, 212, 240);
+    padding: 3px 10px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}

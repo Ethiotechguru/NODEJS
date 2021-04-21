@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+<%- include('includes/nav.ejs') %>  
+<% if(users.length>0){%>
+    <div class="container">
+        <% users.forEach(user =>{%>
+            <div class="card">
+                <h1><%=user.title%></h1>
+                <img src="<%=user.imageUrl%>" alt="Camera"/>
+                <h3>$<%=user.price%></h3>
+                <p><%=user.description%></p>
+                <button>
+                    <a href="/edit-Product/<%= user._id %>?edit=true">Edit</a>
+                </button> 
+                <form action="/admin" method="POST">
+                    <input type="hidden" value="<%= user._id %>" name="productId">
+                    <button class="btn" type="submit">Delete</button>
+                </form>
+            </div>
+        <%})%> 
+    </div>
+<%}else{%>
+    <div class="container">
+        <h1>No user Found</h1>
+    </div>
+        
+    <%}%> 
+<%- include('includes/end.ejs') %>  

@@ -1,0 +1,22 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+<%- include('includes/nav.ejs') %>  
+    <div class="container">
+        <div class="detail">
+            <h1>Hello <span><%=user.title%></span></h1>
+            <img src="<%=user.imageUrl%>" alt="Camera"/>
+            <h3>$<%=user.price%></h3>
+            <form action="/cart" method="POST">
+                <button>Add to Cart</button>
+                <input type="hidden" name="pId" value="<%= user._id %> ">
+            </form>
+        </div>
+        <hr>
+        <div class="paragraph">
+            <h1>User Name:<span><%=user.title%></span></h1>
+            <p><%=user.description%></p>
+            <h3>$<%=user.price%></h3>
+        </div>
+    </div>
+<%- include('includes/end.ejs') %>  
